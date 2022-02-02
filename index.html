@@ -23,7 +23,7 @@
     </div>
     <div id="unity-fullscreen-button" style="display: none;"></div>
     <script>
-      const hideFullScreenButton = "1";
+      const hideFullScreenButton = "0";
       const buildUrl = "Build";
       const loaderUrl = buildUrl + "/GooniezGang.loader.js";
       const config = {
@@ -63,6 +63,7 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       }
+      canvas.style.background = "url('" + buildUrl + "/GooniezGang.jpg') center / cover";
       loadingCover.style.display = "";
 
       const script = document.createElement("script");
